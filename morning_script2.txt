@@ -1,1 +1,1 @@
-Hyrum weather: Cloudy skies tonight with low temps near 35. [pause] Up to 45 today under Cloudy skies.
+Hyrum weather: Partly Cloudy skies tonight with low temps near 30. [pause] Up to 36 today under Partly Cloudy skies.

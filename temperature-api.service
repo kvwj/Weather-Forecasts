@@ -1,0 +1,18 @@
+[Unit]
+Description=DS18B20 temperature HTTP API
+After=systemd-modules-load.service
+
+[Service]
+Type=exec
+EnvironmentFile=-/etc/temperature-api.conf
+ExecStart=/usr/bin/python3 -u /opt/temperature-api/temperature-api.py --host 0.0.0.0 --port 8000
+Restart=on-failure
+RestartSec=3s
+DynamicUser=yes
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+
+[Install]
+WantedBy=multi-user.target
